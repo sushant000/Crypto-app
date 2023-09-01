@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/homefragment">
+
+    <fragment
+        android:id="@+id/homefragment"
+        android:name="com.example.cryptoapp.fragment.HomeFragment"
+        android:label="fragment_homefragment"
+        tools:layout="@layout/fragment_homefragment" >
+        <action
+            android:id="@+id/action_homefragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/watchlistfragment"
+        android:name="com.example.cryptoapp.fragment.WatchlistFragment"
+        android:label="fragment_wishlistfragment"
+        tools:layout="@layout/fragment_watchlistfragment" >
+        <action
+            android:id="@+id/action_watchlistfragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/marketfragment"
+        android:name="com.example.cryptoapp.fragment.MarketFragment"
+        android:label="fragment_marketfragment"
+        tools:layout="@layout/fragment_marketfragment" >
+        <action
+            android:id="@+id/action_marketfragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_marketfragment_to_detailsFragment2"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_marketfragment_to_detailsFragment3"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_marketfragment_to_detailsFragment4"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.cryptoapp.fragment.DetailsFragment"
+        android:label="DetailsFragment" >
+        <argument
+            android:name="data"
+            app:argType="com.example.cryptoapp.models.CryptoCurrency"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+</navigation>

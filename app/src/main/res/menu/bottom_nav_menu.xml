@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/homefragment"
+        android:enabled="true"
+        android:icon="@drawable/house"
+        android:title="Home"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/marketfragment"
+        android:enabled="true"
+        android:icon="@drawable/img"
+        android:title="Market"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/watchlistfragment"
+        android:enabled="true"
+        android:icon="@drawable/wishlist"
+        android:title="Watchlist"
+        app:showAsAction="always"/>
+
+</menu>
